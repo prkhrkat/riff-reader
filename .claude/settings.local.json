@@ -14,7 +14,10 @@
       "Bash(security find-identity:*)",
       "Bash(osascript:*)",
       "Bash(xcrun devicectl:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(chmod:*)",
+      "Bash(swift:*)",
+      "Bash(git reset:*)"
     ]
   }
 }

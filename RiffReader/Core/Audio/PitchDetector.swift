@@ -1,16 +1,17 @@
 import Foundation
 import Accelerate
 
-/// Detects pitch from audio samples using autocorrelation and FFT
+/// Detects pitch from audio samples using autocorrelation
 class PitchDetector {
     private let minFrequency: Double = 80.0  // Low E on guitar
     private let maxFrequency: Double = 1000.0 // High notes on guitar
+    private let threshold: Float = 0.1 // Minimum correlation threshold
 
     func detectPitch(samples: [Float], sampleRate: Double) -> Double? {
         guard samples.count > 0 else { return nil }
 
         // Use autocorrelation for pitch detection
-        let pitch = autocorrelation(samples: samples, sampleRate: sampleRate)
+        let pitch = autocorrelationYIN(samples: samples, sampleRate: sampleRate)
 
         // Validate pitch is in guitar range
         if let pitch = pitch, pitch >= minFrequency && pitch <= maxFrequency {
@@ -20,33 +21,85 @@ class PitchDetector {
         return nil
     }
 
-    private func autocorrelation(samples: [Float], sampleRate: Double) -> Double? {
+    /// YIN algorithm for improved pitch detection
+    private func autocorrelationYIN(samples: [Float], sampleRate: Double) -> Double? {
         let count = samples.count
-        var correlations = [Float](repeating: 0, count: count)
+        guard count > 100 else { return nil }
 
-        // Calculate autocorrelation
-        vDSP_conv(samples, 1, samples, 1, &correlations, 1, vDSP_Length(count), vDSP_Length(count))
-
-        // Find the first peak after the zero lag
         let minLag = Int(sampleRate / maxFrequency)
-        let maxLag = Int(sampleRate / minFrequency)
+        let maxLag = min(Int(sampleRate / minFrequency), count / 2)
 
-        guard maxLag < count else { return nil }
+        guard maxLag > minLag else { return nil }
 
-        var maxCorrelation: Float = 0
-        var maxLagIndex = 0
+        // Calculate difference function
+        var differenceFunction = [Float](repeating: 0, count: maxLag)
 
-        for i in minLag..<maxLag {
-            if correlations[i] > maxCorrelation {
-                maxCorrelation = correlations[i]
-                maxLagIndex = i
+        for lag in 0..<maxLag {
+            var sum: Float = 0.0
+            let effectiveCount = min(count - lag, 1000) // Limit for performance
+
+            for i in 0..<effectiveCount {
+                let diff = samples[i] - samples[i + lag]
+                sum += diff * diff
+            }
+
+            differenceFunction[lag] = sum
+        }
+
+        // Calculate cumulative mean normalized difference function
+        var cmndf = [Float](repeating: 1.0, count: maxLag)
+        cmndf[0] = 1.0
+        var runningSum: Float = 0.0
+
+        for lag in 1..<maxLag {
+            runningSum += differenceFunction[lag]
+            if runningSum > 0 {
+                cmndf[lag] = differenceFunction[lag] / (runningSum / Float(lag))
             }
         }
 
-        guard maxLagIndex > 0 else { return nil }
+        // Find first minimum below threshold
+        for lag in minLag..<maxLag {
+            if cmndf[lag] < threshold {
+                // Look for local minimum
+                if lag + 1 < maxLag && cmndf[lag] < cmndf[lag + 1] {
+                    // Parabolic interpolation for better accuracy
+                    let frequency = parabolicInterpolation(lag: lag, cmndf: cmndf, sampleRate: sampleRate)
+                    return frequency
+                }
+            }
+        }
 
-        let frequency = sampleRate / Double(maxLagIndex)
+        // If no clear minimum, find global minimum
+        var minValue: Float = Float.infinity
+        var bestMinLag = 0
+
+        for lag in minLag..<maxLag {
+            if cmndf[lag] < minValue {
+                minValue = cmndf[lag]
+                bestMinLag = lag
+            }
+        }
+
+        guard bestMinLag > 0, minValue < 1.0 else { return nil }
+
+        let frequency = sampleRate / Double(bestMinLag)
         return frequency
+    }
+
+    private func parabolicInterpolation(lag: Int, cmndf: [Float], sampleRate: Double) -> Double {
+        guard lag > 0, lag < cmndf.count - 1 else {
+            return sampleRate / Double(lag)
+        }
+
+        let alpha = cmndf[lag - 1]
+        let beta = cmndf[lag]
+        let gamma = cmndf[lag + 1]
+
+        let peak = 0.5 * (alpha - gamma) / (alpha - 2 * beta + gamma)
+        let interpolatedLag = Double(lag) + Double(peak)
+
+        return sampleRate / interpolatedLag
     }
 
     /// Convert frequency to nearest note
