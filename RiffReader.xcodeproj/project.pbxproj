@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1506869DCA094628B6B7000000000001 /* RiffReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1506869CCA094628B6B7000000000001 /* RiffReaderApp.swift */; };
+		90B7D93F0C4447789132000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B7D93E0C4447789132000000000002 /* ContentView.swift */; };
+		CCA730C7A56B42C481B5000000000003 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA730C6A56B42C481B5000000000003 /* Note.swift */; };
+		4438F7CE64A5487DA787000000000004 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4438F7CD64A5487DA787000000000004 /* AudioEngine.swift */; };
+		DE5314C174404F39BA5E000000000005 /* PitchDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5314C074404F39BA5E000000000005 /* PitchDetector.swift */; };
+		006839FD606B4B4C85E6000000000006 /* MelodyExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006839FC606B4B4C85E6000000000006 /* MelodyExtractor.swift */; };
+		97B56C515C0C48C597A7000000000007 /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B56C505C0C48C597A7000000000007 /* RecordingView.swift */; };
+		59C1E8DD1BCF4C9C9C3C000000000008 /* GameplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C1E8DC1BCF4C9C9C3C000000000008 /* GameplayView.swift */; };
+		739ED6AE6DE742C0AB9E000000000009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 739ED6AD6DE742C0AB9E000000000009 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1506869CCA094628B6B7000000000001 /* RiffReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiffReaderApp.swift; sourceTree = "<group>"; };
+		90B7D93E0C4447789132000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CCA730C6A56B42C481B5000000000003 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		4438F7CD64A5487DA787000000000004 /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
+		DE5314C074404F39BA5E000000000005 /* PitchDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchDetector.swift; sourceTree = "<group>"; };
+		006839FC606B4B4C85E6000000000006 /* MelodyExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelodyExtractor.swift; sourceTree = "<group>"; };
+		97B56C505C0C48C597A7000000000007 /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
+		59C1E8DC1BCF4C9C9C3C000000000008 /* GameplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayView.swift; sourceTree = "<group>"; };
+		739ED6AD6DE742C0AB9E000000000009 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2BF695C51F9A4A55897B00000000000A /* RiffReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiffReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FAEA31C59E74247AA7F00000000000B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FCE1CB0788F4F868A7F00000000000C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D16E50B5D4FE4A46B68800000000000D /* RiffReader */ = {
+			isa = PBXGroup;
+			children = (
+				96B5D84EC9E5466C85D900000000000E /* App */,
+				BD9A9CA46AC34E9EBDCE00000000000F /* Core */,
+				70ADAC1EE08744568700000000000010 /* Features */,
+				B92D2842F1FD41C9848600000000000011 /* UI */,
+				BBCEC2133B5A40BF947C000000000012 /* Resources */,
+				2FAEA31C59E74247AA7F00000000000B /* Info.plist */,
+			);
+			path = RiffReader;
+			sourceTree = "<group>";
+		};
+		96B5D84EC9E5466C85D900000000000E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1506869CCA094628B6B7000000000001 /* RiffReaderApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BD9A9CA46AC34E9EBDCE00000000000F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				ACEF41BCE1B542ED9895000000000013 /* Audio */,
+				46319D9081B94CC3A39C000000000014 /* Analysis */,
+				70ADAC1EE08744568700000000000015 /* Models */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		ACEF41BCE1B542ED9895000000000013 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				4438F7CD64A5487DA787000000000004 /* AudioEngine.swift */,
+				DE5314C074404F39BA5E000000000005 /* PitchDetector.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		46319D9081B94CC3A39C000000000014 /* Analysis */ = {
+			isa = PBXGroup;
+			children = (
+				006839FC606B4B4C85E6000000000006 /* MelodyExtractor.swift */,
+			);
+			path = Analysis;
+			sourceTree = "<group>";
+		};
+		70ADAC1EE08744568700000000000015 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CCA730C6A56B42C481B5000000000003 /* Note.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		70ADAC1EE08744568700000000000010 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				70ADAC1EE08744568700000000000016 /* Recording */,
+				70ADAC1EE08744568700000000000017 /* Gameplay */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		70ADAC1EE08744568700000000000016 /* Recording */ = {
+			isa = PBXGroup;
+			children = (
+				97B56C505C0C48C597A7000000000007 /* RecordingView.swift */,
+			);
+			path = Recording;
+			sourceTree = "<group>";
+		};
+		70ADAC1EE08744568700000000000017 /* Gameplay */ = {
+			isa = PBXGroup;
+			children = (
+				59C1E8DC1BCF4C9C9C3C000000000008 /* GameplayView.swift */,
+			);
+			path = Gameplay;
+			sourceTree = "<group>";
+		};
+		B92D2842F1FD41C9848600000000000011 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B92D2842F1FD41C9848600000000000018 /* Views */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B92D2842F1FD41C9848600000000000018 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				90B7D93E0C4447789132000000000002 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BBCEC2133B5A40BF947C000000000012 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				739ED6AD6DE742C0AB9E000000000009 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BBCEC2133B5A40BF947C000000000019 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BF695C51F9A4A55897B00000000000A /* RiffReader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBCEC2133B5A40BF947C00000000001A = {
+			isa = PBXGroup;
+			children = (
+				D16E50B5D4FE4A46B68800000000000D /* RiffReader */,
+				BBCEC2133B5A40BF947C000000000019 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBCEC2133B5A40BF947C00000000001B /* RiffReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBCEC2133B5A40BF947C00000000001C /* Build configuration list for PBXNativeTarget "RiffReader" */;
+			buildPhases = (
+				BBCEC2133B5A40BF947C00000000001D /* Sources */,
+				5FCE1CB0788F4F868A7F00000000000C /* Frameworks */,
+				BBCEC2133B5A40BF947C00000000001E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RiffReader;
+			productName = RiffReader;
+			productReference = 2BF695C51F9A4A55897B00000000000A /* RiffReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBCEC2133B5A40BF947C00000000001F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					BBCEC2133B5A40BF947C00000000001B = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = BBCEC2133B5A40BF947C000000000020 /* Build configuration list for PBXProject "RiffReader" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BBCEC2133B5A40BF947C00000000001A;
+			productRefGroup = BBCEC2133B5A40BF947C000000000019 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBCEC2133B5A40BF947C00000000001B /* RiffReader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBCEC2133B5A40BF947C00000000001E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				739ED6AE6DE742C0AB9E000000000009 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBCEC2133B5A40BF947C00000000001D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1506869DCA094628B6B7000000000001 /* RiffReaderApp.swift in Sources */,
+				90B7D93F0C4447789132000000000002 /* ContentView.swift in Sources */,
+				CCA730C7A56B42C481B5000000000003 /* Note.swift in Sources */,
+				4438F7CE64A5487DA787000000000004 /* AudioEngine.swift in Sources */,
+				DE5314C174404F39BA5E000000000005 /* PitchDetector.swift in Sources */,
+				006839FD606B4B4C85E6000000000006 /* MelodyExtractor.swift in Sources */,
+				97B56C515C0C48C597A7000000000007 /* RecordingView.swift in Sources */,
+				59C1E8DD1BCF4C9C9C3C000000000008 /* GameplayView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BBCEC2133B5A40BF947C000000000021 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BBCEC2133B5A40BF947C000000000022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BBCEC2133B5A40BF947C000000000023 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = RiffReader/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.riffReader.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BBCEC2133B5A40BF947C000000000024 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = RiffReader/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.riffReader.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBCEC2133B5A40BF947C00000000001C /* Build configuration list for PBXNativeTarget "RiffReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBCEC2133B5A40BF947C000000000023 /* Debug */,
+				BBCEC2133B5A40BF947C000000000024 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBCEC2133B5A40BF947C000000000020 /* Build configuration list for PBXProject "RiffReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBCEC2133B5A40BF947C000000000021 /* Debug */,
+				BBCEC2133B5A40BF947C000000000022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BBCEC2133B5A40BF947C00000000001F /* Project object */;
+}
