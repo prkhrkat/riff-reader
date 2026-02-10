@@ -7,7 +7,14 @@
       "Bash(xcrun simctl:*)",
       "Bash(git init:*)",
       "Bash(gh:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(brew install:*)",
+      "Bash(xcrun xctrace:*)",
+      "Bash(security find-identity:*)",
+      "Bash(osascript:*)",
+      "Bash(xcrun devicectl:*)",
+      "Bash(git push:*)"
     ]
   }
 }

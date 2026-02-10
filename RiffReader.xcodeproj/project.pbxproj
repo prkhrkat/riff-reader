@@ -7,29 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1506869DCA094628B6B7000000000001 /* RiffReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1506869CCA094628B6B7000000000001 /* RiffReaderApp.swift */; };
-		90B7D93F0C4447789132000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B7D93E0C4447789132000000000002 /* ContentView.swift */; };
-		CCA730C7A56B42C481B5000000000003 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA730C6A56B42C481B5000000000003 /* Note.swift */; };
-		4438F7CE64A5487DA787000000000004 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4438F7CD64A5487DA787000000000004 /* AudioEngine.swift */; };
-		DE5314C174404F39BA5E000000000005 /* PitchDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5314C074404F39BA5E000000000005 /* PitchDetector.swift */; };
 		006839FD606B4B4C85E6000000000006 /* MelodyExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006839FC606B4B4C85E6000000000006 /* MelodyExtractor.swift */; };
-		97B56C515C0C48C597A7000000000007 /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B56C505C0C48C597A7000000000007 /* RecordingView.swift */; };
+		1506869DCA094628B6B7000000000001 /* RiffReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1506869CCA094628B6B7000000000001 /* RiffReaderApp.swift */; };
+		4438F7CE64A5487DA787000000000004 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4438F7CD64A5487DA787000000000004 /* AudioEngine.swift */; };
 		59C1E8DD1BCF4C9C9C3C000000000008 /* GameplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C1E8DC1BCF4C9C9C3C000000000008 /* GameplayView.swift */; };
 		739ED6AE6DE742C0AB9E000000000009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 739ED6AD6DE742C0AB9E000000000009 /* Assets.xcassets */; };
+		90B7D93F0C4447789132000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B7D93E0C4447789132000000000002 /* ContentView.swift */; };
+		97B56C515C0C48C597A7000000000007 /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B56C505C0C48C597A7000000000007 /* RecordingView.swift */; };
+		CCA730C7A56B42C481B5000000000003 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA730C6A56B42C481B5000000000003 /* Note.swift */; };
+		DE5314C174404F39BA5E000000000005 /* PitchDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5314C074404F39BA5E000000000005 /* PitchDetector.swift */; };
+		AABBCCDD0000000000000000000000AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AABBCCDD0000000000000000000000BB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1506869CCA094628B6B7000000000001 /* RiffReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiffReaderApp.swift; sourceTree = "<group>"; };
-		90B7D93E0C4447789132000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		CCA730C6A56B42C481B5000000000003 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
-		4438F7CD64A5487DA787000000000004 /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
-		DE5314C074404F39BA5E000000000005 /* PitchDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchDetector.swift; sourceTree = "<group>"; };
 		006839FC606B4B4C85E6000000000006 /* MelodyExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelodyExtractor.swift; sourceTree = "<group>"; };
-		97B56C505C0C48C597A7000000000007 /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
-		59C1E8DC1BCF4C9C9C3C000000000008 /* GameplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayView.swift; sourceTree = "<group>"; };
-		739ED6AD6DE742C0AB9E000000000009 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1506869CCA094628B6B7000000000001 /* RiffReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiffReaderApp.swift; sourceTree = "<group>"; };
 		2BF695C51F9A4A55897B00000000000A /* RiffReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiffReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FAEA31C59E74247AA7F00000000000B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4438F7CD64A5487DA787000000000004 /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
+		59C1E8DC1BCF4C9C9C3C000000000008 /* GameplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayView.swift; sourceTree = "<group>"; };
+		739ED6AD6DE742C0AB9E000000000009 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		90B7D93E0C4447789132000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		97B56C505C0C48C597A7000000000007 /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
+		CCA730C6A56B42C481B5000000000003 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		DE5314C074404F39BA5E000000000005 /* PitchDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchDetector.swift; sourceTree = "<group>"; };
+		AABBCCDD0000000000000000000000BB /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,60 +45,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D16E50B5D4FE4A46B68800000000000D /* RiffReader */ = {
-			isa = PBXGroup;
-			children = (
-				96B5D84EC9E5466C85D900000000000E /* App */,
-				BD9A9CA46AC34E9EBDCE00000000000F /* Core */,
-				70ADAC1EE08744568700000000000010 /* Features */,
-				B92D2842F1FD41C9848600000000000011 /* UI */,
-				BBCEC2133B5A40BF947C000000000012 /* Resources */,
-				2FAEA31C59E74247AA7F00000000000B /* Info.plist */,
-			);
-			path = RiffReader;
-			sourceTree = "<group>";
-		};
-		96B5D84EC9E5466C85D900000000000E /* App */ = {
-			isa = PBXGroup;
-			children = (
-				1506869CCA094628B6B7000000000001 /* RiffReaderApp.swift */,
-			);
-			path = App;
-			sourceTree = "<group>";
-		};
-		BD9A9CA46AC34E9EBDCE00000000000F /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				ACEF41BCE1B542ED9895000000000013 /* Audio */,
-				46319D9081B94CC3A39C000000000014 /* Analysis */,
-				70ADAC1EE08744568700000000000015 /* Models */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		ACEF41BCE1B542ED9895000000000013 /* Audio */ = {
-			isa = PBXGroup;
-			children = (
-				4438F7CD64A5487DA787000000000004 /* AudioEngine.swift */,
-				DE5314C074404F39BA5E000000000005 /* PitchDetector.swift */,
-			);
-			path = Audio;
-			sourceTree = "<group>";
-		};
 		46319D9081B94CC3A39C000000000014 /* Analysis */ = {
 			isa = PBXGroup;
 			children = (
 				006839FC606B4B4C85E6000000000006 /* MelodyExtractor.swift */,
 			);
 			path = Analysis;
-			sourceTree = "<group>";
-		};
-		70ADAC1EE08744568700000000000015 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				CCA730C6A56B42C481B5000000000003 /* Note.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		70ADAC1EE08744568700000000000010 /* Features */ = {
@@ -106,6 +60,14 @@
 				70ADAC1EE08744568700000000000017 /* Gameplay */,
 			);
 			path = Features;
+			sourceTree = "<group>";
+		};
+		70ADAC1EE08744568700000000000015 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CCA730C6A56B42C481B5000000000003 /* Note.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		70ADAC1EE08744568700000000000016 /* Recording */ = {
@@ -122,6 +84,23 @@
 				59C1E8DC1BCF4C9C9C3C000000000008 /* GameplayView.swift */,
 			);
 			path = Gameplay;
+			sourceTree = "<group>";
+		};
+		96B5D84EC9E5466C85D900000000000E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1506869CCA094628B6B7000000000001 /* RiffReaderApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ACEF41BCE1B542ED9895000000000013 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				4438F7CD64A5487DA787000000000004 /* AudioEngine.swift */,
+				DE5314C074404F39BA5E000000000005 /* PitchDetector.swift */,
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 		B92D2842F1FD41C9848600000000000011 /* UI */ = {
@@ -144,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				739ED6AD6DE742C0AB9E000000000009 /* Assets.xcassets */,
+				AABBCCDD0000000000000000000000BB /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -162,6 +142,29 @@
 				D16E50B5D4FE4A46B68800000000000D /* RiffReader */,
 				BBCEC2133B5A40BF947C000000000019 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		BD9A9CA46AC34E9EBDCE00000000000F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				ACEF41BCE1B542ED9895000000000013 /* Audio */,
+				46319D9081B94CC3A39C000000000014 /* Analysis */,
+				70ADAC1EE08744568700000000000015 /* Models */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D16E50B5D4FE4A46B68800000000000D /* RiffReader */ = {
+			isa = PBXGroup;
+			children = (
+				96B5D84EC9E5466C85D900000000000E /* App */,
+				BD9A9CA46AC34E9EBDCE00000000000F /* Core */,
+				70ADAC1EE08744568700000000000010 /* Features */,
+				B92D2842F1FD41C9848600000000000011 /* UI */,
+				BBCEC2133B5A40BF947C000000000012 /* Resources */,
+				2FAEA31C59E74247AA7F00000000000B /* Info.plist */,
+			);
+			path = RiffReader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,7 +195,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					BBCEC2133B5A40BF947C00000000001B = {
 						CreatedOnToolsVersion = 15.0;
@@ -223,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				739ED6AE6DE742C0AB9E000000000009 /* Assets.xcassets in Resources */,
+				AABBCCDD0000000000000000000000AA /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +286,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = QQ2LHZ7H89;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -305,6 +310,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -345,6 +351,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = QQ2LHZ7H89;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -361,6 +368,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -373,7 +381,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = RiffReader/Info.plist;
@@ -406,7 +413,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = RiffReader/Info.plist;
